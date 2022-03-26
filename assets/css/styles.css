@@ -111,7 +111,7 @@ label {
     "articleAbout articleAbout";
 }
 
-.gridService{
+.gridService {
   display: grid;
   margin: 0 auto;
   align-content: center;
@@ -120,7 +120,7 @@ label {
 
 }
 
-.gridPrices{
+.gridPrices {
   display: grid;
   margin: 0 auto;
   align-content: center;
@@ -129,7 +129,7 @@ label {
   padding: 5rem;
   grid-template-areas:
     "tituloprecios tituloprecios"
-    
+
     "masajeimg1 preciomasaje1"
     "info1  info1"
     "masajeimg2  preciomasaje2"
@@ -142,32 +142,32 @@ label {
 /* Grid template areas */
 
 
-.precios__titulo{
+.precios__titulo {
   grid-area: tituloprecios;
 }
 
-.precios__img1{
+.precios__img1 {
   grid-area: masajeimg1;
 }
 
-.precios__parrafo1{
+.precios__parrafo1 {
   grid-area: preciomasaje1;
 }
 
-.precios__link1{
+.precios__link1 {
   grid-area: info1;
 }
 
 
-.precios__img2{
+.precios__img2 {
   grid-area: masajeimg2;
 }
 
-.precios__parrafo2{
+.precios__parrafo2 {
   grid-area: preciomasaje2;
 }
 
-.precios__link2{
+.precios__link2 {
   grid-area: info2;
 }
 
@@ -175,7 +175,8 @@ label {
 /* Header */
 
 header {
-  background-color: var(--principal-color);
+  background: rgb(97, 17, 152);
+  background: linear-gradient(270deg, rgba(97, 17, 152, 1) 0%, rgba(239, 4, 4, 1) 50%, rgba(242, 246, 76, 1) 100%);
 }
 
 header .navbar {
@@ -281,34 +282,34 @@ form {
 
 /* Main Services */
 
-.servicios__titulo{
+.servicios__titulo {
   grid-area: servicios__titulo;
   padding: 3rem;
 }
 
-.servicios__masaje1--titulo{
+.servicios__masaje1--titulo {
   grid-area: titulom1;
 }
 
-.servicios__container1{
+.servicios__container1 {
   grid-area: descripcionm1;
 }
 
-.servicios__masaje1--imagen{
+.servicios__masaje1--imagen {
   grid-area: imgm1;
   padding: 3rem;
   height: 25rem;
 }
 
-.servicios__masaje2--titulo{
+.servicios__masaje2--titulo {
   grid-area: titulom2;
 }
 
-.servicios__masaje2--parrafo{
+.servicios__masaje2--parrafo {
   grid-area: descripcionm2;
 }
 
-.servicios__masaje2--imagen{
+.servicios__masaje2--imagen {
   grid-area: imgm2;
   padding: 3rem;
   height: 25rem;
@@ -317,6 +318,8 @@ form {
 /*Footer*/
 
 footer {
+  background: rgb(97, 17, 152);
+  background: linear-gradient(90deg, rgba(97, 17, 152, 1) 0%, rgba(239, 4, 4, 1) 50%, rgba(242, 246, 76, 1) 100%);
   background-color: var(--principal-color);
   min-height: 10vh;
   padding: 0px 20px;
@@ -336,28 +339,28 @@ footer {
 
 /*media "prueba" */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   header {
     padding: 2em;
   }
-  
-  header .navbar{
+
+  header .navbar {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
   }
 
-  .bienvenida{
+  .bienvenida {
     display: flex;
     flex-direction: column;
   }
 
-  .menu{
+  .menu {
     font-size: .9em;
     flex-direction: column;
   }
 
-  html{
+  html {
     background-color: aquamarine;
   }
 
@@ -366,7 +369,7 @@ footer {
     font-size: 1.1em;
     font-family: black;
   }
-  
+
   h1,
   h2,
   h3 {
@@ -375,21 +378,21 @@ footer {
     color: black
   }
 
-  .bienvendia__imagen{
+  .bienvendia__imagen {
     width: fit-content;
     position: -1;
   }
 
-  .menu__link{
-    
+  .menu__link {
+
     color: blue;
   }
 
-  .menu__logo{
+  .menu__logo {
     order: 1;
   }
 
-  main .objetivos{
+  main .objetivos {
     display: flex;
     flex-direction: column-reverse;
   }
