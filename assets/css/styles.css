@@ -1,0 +1,398 @@
+/* import */
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@300;400&display=swap");
+
+/* Variables */
+
+:root {
+  --principal-color: #5b6464;
+  --secondary-color: #2499c7f1;
+  --link-color: #ffffff;
+  --extra-colorW: white;
+  --extra-colorB: black;
+  --font-paragraph: "Roboto", sans-serif;
+  --font-titule: "PT Sans", sans-serif;
+  --font-link: ;
+  --text-lg: 2em;
+  --text-md: 2em;
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/*
+Buena practica para fuentes em
+para espaciado margenes y padding rem
+*/
+
+/* Glonals*/
+
+html {
+  font-size: 62.5%;
+  /*Para calcular a 10px*/
+  font-family: var(--font-primary);
+  background-color: var(--secondary-color);
+}
+
+body {
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  display: inline-block;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: var(--text-md);
+}
+
+p {
+  color: var(--extra-colorW);
+  font-size: var(--text-md);
+  font-family: var(--font-paragraph);
+}
+
+h1,
+h2,
+h3 {
+  font-size: var(--text-md);
+  font-family: var(--font-titule);
+  color: var(--extra-colorW);
+}
+
+label {
+  font-size: var(--text-md);
+  font-family: var(--font-paragraph);
+  color: var(--extra-colorW);
+}
+
+/* Helpers */
+
+.flex-row {
+  display: flex;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.gridContact {
+  display: grid;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.gridAbout {
+  display: grid;
+  margin: 0 auto;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "imagenmasajista imagenmasajista2"
+    "articleAbout articleAbout";
+}
+
+.gridService{
+  display: grid;
+  margin: 0 auto;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.gridPrices{
+  display: grid;
+  margin: 0 auto;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 5rem;
+  grid-template-areas:
+    "tituloprecios tituloprecios"
+    
+    "masajeimg1 preciomasaje1"
+    "info1  info1"
+    "masajeimg2  preciomasaje2"
+    "info2 info2"
+  ;
+
+
+}
+
+/* Grid template areas */
+
+
+.precios__titulo{
+  grid-area: tituloprecios;
+}
+
+.precios__img1{
+  grid-area: masajeimg1;
+}
+
+.precios__parrafo1{
+  grid-area: preciomasaje1;
+}
+
+.precios__link1{
+  grid-area: info1;
+}
+
+
+.precios__img2{
+  grid-area: masajeimg2;
+}
+
+.precios__parrafo2{
+  grid-area: preciomasaje2;
+}
+
+.precios__link2{
+  grid-area: info2;
+}
+
+
+/* Header */
+
+header {
+  background-color: var(--principal-color);
+}
+
+header .navbar {
+  min-height: 10vh;
+  /* 10% del alto visible de la pantalla */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+header .logo {
+  flex-basis: 30%;
+  height: fit-content;
+}
+
+.logo__img {
+  height: 5.5rem;
+  padding: 0.1rem;
+}
+
+header .menu {
+  flex-basis: 40%;
+  justify-content: space-between;
+}
+
+.menu .menu__link {
+  font-size: var(--text-lg);
+  font-family: var(--font-secondary);
+  padding: 0 2rem;
+}
+
+/* Main */
+
+main {
+  min-height: 80vh;
+  align-items: center;
+}
+
+.bienvenida {
+  margin: 3rem;
+  min-height: 80vh;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "bienvenida__titulo bienvenida__titulo bienvenida__titulo"
+    "picture picture articule";
+}
+
+.bienvenida__titulo {
+  grid-area: bienvenida__titulo;
+  padding: 2rem;
+}
+
+article {
+  grid-area: articule;
+}
+
+.presentacion .presentacion__texto {
+  text-align: center;
+  font-size: var(--text-md);
+  padding: 3em;
+}
+
+.bienvenida__img {
+  width: 100%;
+  height: 25rem;
+  padding: 3em;
+  grid-area: picture;
+}
+
+main .form {
+  min-height: 50vh;
+  margin: 3rem 0 0 0;
+
+}
+
+form {
+  background-color: var(--principal-color);
+}
+
+.form__textareainput {
+  align-items: center;
+}
+
+/* Main About */
+
+.objetivos__imagen {
+  grid-area: imagenmasajista;
+  padding: 3rem;
+  height: 25rem;
+}
+
+.objetivos__imagen2 {
+  grid-area: imagenmasajista2;
+  padding: 3rem;
+  height: 25rem;
+}
+
+.objetivos__articulo {
+  grid-area: articleAbout;
+}
+
+/* Main Services */
+
+.servicios__titulo{
+  grid-area: servicios__titulo;
+  padding: 3rem;
+}
+
+.servicios__masaje1--titulo{
+  grid-area: titulom1;
+}
+
+.servicios__container1{
+  grid-area: descripcionm1;
+}
+
+.servicios__masaje1--imagen{
+  grid-area: imgm1;
+  padding: 3rem;
+  height: 25rem;
+}
+
+.servicios__masaje2--titulo{
+  grid-area: titulom2;
+}
+
+.servicios__masaje2--parrafo{
+  grid-area: descripcionm2;
+}
+
+.servicios__masaje2--imagen{
+  grid-area: imgm2;
+  padding: 3rem;
+  height: 25rem;
+}
+
+/*Footer*/
+
+footer {
+  background-color: var(--principal-color);
+  min-height: 10vh;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+}
+
+.footer__copyright {
+  font-size: var(--text-lg);
+}
+
+.footer__whatsapp {
+  height: 5.5rem;
+}
+
+
+/*media "prueba" */
+
+@media screen and (max-width: 768px){
+  header {
+    padding: 2em;
+  }
+  
+  header .navbar{
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bienvenida{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu{
+    font-size: .9em;
+    flex-direction: column;
+  }
+
+  html{
+    background-color: aquamarine;
+  }
+
+  p {
+    color: var(--extra-colorb);
+    font-size: 1.1em;
+    font-family: black;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-size: 2em;
+    font-family: var(--font-titule);
+    color: black
+  }
+
+  .bienvendia__imagen{
+    width: fit-content;
+    position: -1;
+  }
+
+  .menu__link{
+    
+    color: blue;
+  }
+
+  .menu__logo{
+    order: 1;
+  }
+
+  main .objetivos{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+
+}
