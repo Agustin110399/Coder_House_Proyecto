@@ -45,6 +45,7 @@ html {
 
 body {
   min-height: 100vh;
+  background-color: var(--font-secondary);
 }
 
 ul {
@@ -90,7 +91,7 @@ label {
   margin: 0 auto;
 }
 
-.grid {
+.gridIndex{
   display: grid;
 }
 
@@ -241,12 +242,7 @@ article {
   padding: 3em;
 }
 
-.bienvenida__img {
-  width: 100%;
-  height: 25rem;
-  padding: 3em;
-  grid-area: picture;
-}
+
 
 main .form {
   min-height: 50vh;
@@ -334,6 +330,10 @@ footer {
 
 .footer__whatsapp {
   height: 5.5rem;
+}
+
+html{
+  background-color: #5b6464;
 }
 
 
