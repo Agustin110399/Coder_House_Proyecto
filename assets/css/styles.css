@@ -5,8 +5,8 @@
 /* Variables */
 
 :root {
-  --principal-color: #5b6464;
-  --secondary-color: #2499c7f1;
+  --principal-color: #6cc0c0;
+  --secondary-color:  #c1e2fa;
   --link-color: #ffffff;
   --extra-colorW: white;
   --extra-colorB: black;
@@ -175,9 +175,13 @@ label {
 
 /* Header */
 
+
+nav{
+  background-color:var(--secondary-color);
+}
+
 header {
-  background: rgb(97, 17, 152);
-  background: linear-gradient(270deg, rgba(97, 17, 152, 1) 0%, rgba(239, 4, 4, 1) 50%, rgba(242, 246, 76, 1) 100%);
+background-color: var(--secondary-color);
 }
 
 header .navbar {
@@ -314,9 +318,7 @@ form {
 /*Footer*/
 
 footer {
-  background: rgb(97, 17, 152);
-  background: linear-gradient(90deg, rgba(97, 17, 152, 1) 0%, rgba(239, 4, 4, 1) 50%, rgba(242, 246, 76, 1) 100%);
-  background-color: var(--principal-color);
+  background-color: var(--secondary-color);
   min-height: 10vh;
   padding: 0px 20px;
   align-items: center;
@@ -333,9 +335,16 @@ footer {
 }
 
 html{
-  background-color: #5b6464;
+  background-color: var(--principal-color);
 }
 
+.card-text{
+  color: black;
+}
+
+.card-title{
+  color: black;
+}
 
 /*media "prueba" */
 

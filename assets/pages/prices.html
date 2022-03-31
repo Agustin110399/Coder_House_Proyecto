@@ -16,11 +16,11 @@
 <body>
   <!-- Inicia el header-->
   <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #c1e2fa;">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="../../index.html">
           <img src="../images/logo_masaje.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-          Masajes del norte
+          <span>Masajes del norte</span>
         </a>
         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
@@ -41,43 +41,34 @@
           </ul>
         </div>
       </div>
+
     </nav>
 
   </header>
   <!-- Termina el header-->
   <!-- Inicia el main-->
-  <main>
-    <div class="container gridPrices">
-      <div class="precios">
-        <h1 class="precios__titulo">Precios</h1>
-        <section class="precios__masaje1">
-          <div class="precios__masaje1">
-            <img class="precios__img1" src="../images/Masaje-desconstracturante.jpg" alt="masaje descontracturante.">
-            <p class="precios__parrafo1">
-              Masaje descontracturante 1000$
-            </p>
-            <a class="precios__link1" href="service.html#masaje 1">Mas informacion</a>
-            <!--Agregar imagen luego-->
-          </div>
-        </section>
-        <section class="pracios__masaje2">
-          <div class="precios_masaje2">
-            <img class="precios__img2"src="../images/Masaje-relajante.jpg" alt="masaje relajante.">
-            <p class="precios__parrafo2">
-              Masaje descontracturante 1500$
-            </p>
-            <a class="precios__link2" href="service.html#masaje 2">Mas informacion</a>
-            <!--Agregar imagen luego-->
-          </div>
-        </section>
-        <section>
-          <article>
-            <p>
-              Promociones...
-              10 masajes y te regalamos 1...
-            </p>
-          </article>
-        </section>
+  <main class="row align-items-center">
+
+    <div class="row text-center">
+      <h1>Precios</h1>
+    </div>
+
+    <div class="container row justify-content-evenly">
+      <div class="card col-4" style="width: 18rem;">
+        <img src="../images/Masaje-desconstracturante.jpg" alt="masaje descontracturante.">
+        <div class="card-body">
+          <h5 class="card-title">Masaje desconstracturante</h5>
+          <p class="card-text">$1000</p>
+          <a href="service.html#masaje 1" class="btn btn-primary">Ir a servicios</a>
+        </div>
+      </div>
+      <div class="card col-4" style="width: 18rem;">
+        <img src="../images/Masaje-relajante.jpg" alt="masaje relajante.">
+        <div class="card-body">
+          <h5 class="card-title">Masaje relajante</h5>
+          <p class="card-text">$1200</p>
+          <a href="service.html#masaje 2" class="btn btn-primary">Ir a servicios</a>
+        </div>
       </div>
     </div>
   </main>
