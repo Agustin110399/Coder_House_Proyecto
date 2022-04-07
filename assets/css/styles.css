@@ -72,7 +72,10 @@ h1{
   font-size: var(--text-xl);
   font-family: var(--font-titule);
   color: var(--extra-colorW);
+  
 }
+
+
 
 h2,
 h3 {
@@ -173,10 +176,16 @@ form {
   align-items: center;
 }
 
+.container{
+  padding: 5rem;
+}
 /* Main About */
 
 
+
+
 /* Main Services */
+
 
 
 /*Footer*/
@@ -223,7 +232,17 @@ html{
 
 .fade-in-image:hover {
   opacity:100%;
-  transition:opacity 2s
+  transition:opacity 2s;
+  
+}
+
+.image-scale{
+  filter: grayscale(100%);
+  transition: 2.5s;
+}
+
+.image-scale:hover{
+  filter: grayscale(0%);
 }
 
 /* Animaciones */
@@ -246,30 +265,33 @@ html{
   }
 }
 
-@keyframes fadebackground {
-  0%{background-position: 0 50%;}
-  50%{background-position: 100 50%;}
-  100%{background-position: 0 50%;}
+@keyframes changecolor {
+  0%{
+    background-color: aquamarine;
+  }
 
-}
+  33%{
+    background-color: aqua;
+  }
 
-main{
-  background-color: linear-gradient(45deg,red,blue,green,black);
+  66%{
+    background-color: cornflowerblue;
+  }
+
+  100%{
+    background-color:darkturquoise;
+  }
 }
+  
 
 
 /*media "prueba" */
 
 @media screen and (max-width: 768px) {
 
-  body{
-    animation: fadeInAnimation linear 2.5s;
-  }
-
-  main{
-    background-color: linear-gradient(45deg,red,blue,green,black);
-    animation: fadebackground 15s infinite;
-  }
+body{
+ animation: changecolor 5s infinite ;
+}
   
 }
 
