@@ -13,7 +13,8 @@
   --font-paragraph: "Roboto", sans-serif;
   --font-titule: "PT Sans", sans-serif;
   --font-link: ;
-  --text-lg: 2em;
+  --text-xl: 4em;
+  --text-lg: 3em;
   --text-md: 2em;
 }
 
@@ -67,7 +68,12 @@ p {
   font-family: var(--font-paragraph);
 }
 
-h1,
+h1{
+  font-size: var(--text-xl);
+  font-family: var(--font-titule);
+  color: var(--extra-colorW);
+}
+
 h2,
 h3 {
   font-size: var(--text-md);
@@ -143,6 +149,7 @@ header .menu {
 main {
   min-height: 80vh;
   align-items: center;
+  animation: fadeInAnimation linear 2.5s;
 }
 
 
@@ -175,6 +182,7 @@ form {
 /*Footer*/
 
 footer {
+  display: flex;
   background-color: var(--secondary-color);
   min-height: 10vh;
   padding: 0px 20px;
@@ -183,8 +191,12 @@ footer {
   bottom: 0;
 }
 
+footer p{
+  color: var(--extra-colorB);
+}
+
 .footer__copyright {
-  font-size: var(--text-lg);
+  font-size: var(--text-md);
 }
 
 .footer__whatsapp {
@@ -203,21 +215,63 @@ html{
   color: black;
 }
 
-h2.form__titulo{
-  padding: 2rem;
-  font-size: 3em;
-  margin: 2rem;
-  border-spacing: 2rem;
-  border-color: #021d1d;
-  background-color: #021d1d;
+/* Fade Imagenes*/
+
+.fade-in-image {
+  opacity: 50%;
 }
 
-a.nav-link{
-  border-spacing: 13rem;
- border-color: #021d1d;
+.fade-in-image:hover {
+  opacity:100%;
+  transition:opacity 2s
 }
+
+/* Animaciones */
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeOutAnimation {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+@keyframes fadebackground {
+  0%{background-position: 0 50%;}
+  50%{background-position: 100 50%;}
+  100%{background-position: 0 50%;}
+
+}
+
+main{
+  background-color: linear-gradient(45deg,red,blue,green,black);
+}
+
 
 /*media "prueba" */
+
+@media screen and (max-width: 768px) {
+
+  body{
+    animation: fadeInAnimation linear 2.5s;
+  }
+
+  main{
+    background-color: linear-gradient(45deg,red,blue,green,black);
+    animation: fadebackground 15s infinite;
+  }
+  
+}
 
 /*
 @media screen and (max-width: 768px) {
