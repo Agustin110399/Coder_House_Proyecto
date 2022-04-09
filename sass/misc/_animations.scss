@@ -1,0 +1,36 @@
+
+  
+  @keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+  
+  @keyframes changecolor {
+    0%{
+      background-color: aquamarine;
+    }
+  
+    33%{
+      background-color: aqua;
+    }
+  
+    66%{
+      background-color: cornflowerblue;
+    }
+  
+    100%{
+      background-color:darkturquoise;
+    }
+  }
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }

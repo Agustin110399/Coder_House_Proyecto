@@ -1,0 +1,133 @@
+/* import */
+/* MISCELANEOUS */
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Bebas+Neue&family=Pacifico&display=swap");
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
+
+/* Globals*/
+html {
+  font-size: 62.5%;
+  /*Para calcular a 10px*/
+  font-family: var(--font-primary);
+  background-color: var(#c1e2fa); }
+
+body {
+  min-height: 100vh;
+  background-color: var(#c1e2fa); }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+p {
+  color: white;
+  font-size: 2em;
+  font-family: "font-family: 'Allura', cursive;"; }
+
+h1 {
+  font-size: 4em;
+  font-family: "font-family: 'Bebas Neue', cursive";
+  color: black; }
+
+h2,
+h3 {
+  font-size: 2em;
+  font-family: "font-family: 'Bebas Neue', cursive"; }
+
+label {
+  font-size: 2em;
+  font-family: "font-family: 'Allura', cursive;"; }
+
+main {
+  min-height: 80vh;
+  align-items: center;
+  background-color: #6cc0c0; }
+
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes changecolor {
+  0% {
+    background-color: aquamarine; }
+  33% {
+    background-color: aqua; }
+  66% {
+    background-color: cornflowerblue; }
+  100% {
+    background-color: darkturquoise; } }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.fade-in-image {
+  opacity: 50%; }
+
+.fade-in-image:hover {
+  opacity: 100%;
+  transition: opacity 2s; }
+
+.image-scale {
+  filter: grayscale(100%);
+  transition: 2.5s; }
+
+.image-scale:hover {
+  filter: grayscale(0%); }
+
+/* PARTIALS */
+header {
+  background-color: #c1e2fa; }
+  header .navbar {
+    min-height: 10vh;
+    /*10% del alto visible de la pantalla*/
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    background-color: #c1e2fa; }
+    header .navbar .navbar__logo__img {
+      width: 30;
+      height: 24; }
+    header .navbar .navbar__nav .navbar__item {
+      padding-left: 2em; }
+      header .navbar .navbar__nav .navbar__item .navbar__link {
+        font-size: 2em;
+        font-family: "font-family: 'Pacifico', cursive"; }
+      header .navbar .navbar__nav .navbar__item .navbar__link:hover {
+        background-color: blue;
+        transition: 2s; }
+
+footer {
+  display: flex;
+  background-color: #c1e2fa;
+  min-height: 10vh;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: center;
+  bottom: 0; }
+  footer .footer__copyright__text {
+    color: black;
+    font-size: 2em; }
+  footer .footer__whatsapp {
+    height: 5.5rem; }
+
+/* VIEWS */
+.main__welcome {
+  animation: fadeInAnimation linear 2s; }
+  .main__welcome__title:hover {
+    text-decoration: underline crimson; }
+  .main__welcome__text {
+    text-decoration: underline cadetblue; }

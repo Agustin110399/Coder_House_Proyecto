@@ -1,0 +1,67 @@
+/* Reset */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+/* Globals*/
+
+html {
+  font-size: 62.5%;
+  /*Para calcular a 10px*/
+  font-family: var(--font-primary);
+  background-color: var($secondary-color);
+}
+
+
+body {
+  min-height: 100vh;
+  background-color: var($secondary-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: $color-white;
+  font-size: $text-md;
+  font-family: $font-paragraph;
+}
+
+h1 {
+  font-size: $text-xl;
+  font-family: $font-titule;
+  color: $color-black
+}
+
+
+h2,
+h3 {
+  font-size: $text-md;
+  font-family: $font-titule;
+  
+}
+
+label {
+  font-size: $text-md;
+  font-family: $font-paragraph;
+  
+}
+
+main {
+  min-height: 80vh;
+  align-items: center;  
+  background-color: $principal-color;
+}

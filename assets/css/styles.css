@@ -156,11 +156,6 @@ main {
 }
 
 
-article {
-  grid-area: articule;
-}
-
-
 
 main .form {
   min-height: 50vh;
@@ -176,9 +171,7 @@ form {
   align-items: center;
 }
 
-.container{
-  padding: 5rem;
-}
+
 /* Main About */
 
 

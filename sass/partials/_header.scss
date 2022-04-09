@@ -1,0 +1,45 @@
+header {
+
+  background-color: $secondary-color;
+
+  .navbar {
+
+    min-height: 10vh;
+    /*10% del alto visible de la pantalla*/
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    background-color: $secondary-color;
+
+    .navbar__logo {
+
+      &__img {
+        width: 30;
+        height: 24;
+      }
+    }
+
+    .navbar__nav {
+
+      .navbar__item {
+
+
+        padding-left: 2em;
+
+        .navbar__link {
+          font-size: $text-md;
+          font-family: $font-link;
+          
+        }
+
+        .navbar__link:hover {
+          background-color: blue;
+          transition: 2s;
+        }
+
+      }
+
+    }
+  }
+
+}

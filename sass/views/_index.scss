@@ -1,0 +1,23 @@
+.main {
+    
+
+    &__welcome {
+
+        animation: fadeInAnimation linear 2s;
+
+        &__title {
+            
+            
+            &:hover{
+                
+                text-decoration: underline crimson;               
+            }
+
+
+        }
+
+        &__text{
+            text-decoration: underline cadetblue;
+        }
+    }
+}
