@@ -8,6 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
   <title>Document</title>
 </head>
 
@@ -15,93 +17,282 @@
 
 <body>
   <!-- Inicia el header-->
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light">
+  <header>
+
+    <!-- 
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../../index.html">
-          <img src="../images/logo_masaje.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-          Masajes del norte
+        <a class="navbar__logo navbar-brand" href="../../index.html">
+          <img class="navbar__logo__img img-fluid" src="../images/Masaje_Logo.jpg" alt="">
+          <span class="navbar__logo__text">Masajes del norte</span>
         </a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+
+        <button class="navbar__toogler__botton navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar__toogler__botton__icon navbar-toggler-icon">
+            <img class="navbar__toogler__booton__icon__img img-fluid" src="../images/Masaje-Toogler__buttom.png" alt="">
+          </span>
         </button>
+
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="../../index.html">HOME</a>
+          <ul class="navbar__nav navbar-nav">
+            <li class="navbar__item nav-item">
+              <a class="navbar__link nav-link" href="../../index.html">HOME</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT</a>
+            <li class="navbar__item nav-item">
+              <a class="navbar__link nav-link" href="about.html">ABOUT</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="service.html">SERVICE</a>
+            <li class="navbar__item nav-item">
+              <a class="navbar__link--active nav-link" href="service.html">SERVICE</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="prices.html">PRICES</a>
+            <li class="navbar__item nav-item">
+              <a class="navbar__link nav-link" href="prices.html">PRICES</a>
             </li>
-            <li class="nav-item">              
-              <a class="nav-link" href="contact.html">CONTACT</a>
+            <li class="navbar__item nav-item">
+              <a class="navbar__link nav-link" href="contact.html">CONTACT</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+Inicia el header-->
+
+    <nav class="nav">
+
+      <div class="nav__container">
+
+        <a class="nav__logo" href="../../index.html">
+          <img
+            class="nav__logoimg"
+            src="../images/Masaje_Logo.jpg"
+            alt=""
+            width="60"
+            height="40"
+          />
+          <h1 class="nav__logotext">Masajes del norte</h1>
+        </a>
+
+        <label for="menu" class="nav__label">
+          <img src="../images/Masajes-iconmenu.svg" class="nav__img" alt="">
+        </label>
+
+        <input type="checkbox" id="menu" class="nav__input">
+
+        <div class="nav__menu">
+          <a href="../../index.html" class="nav__item">INICIO</a>
+          <a href="about.html" class="nav__item">SOBRE MI</a>
+          <a href="service.html" class="nav__item">SERVICIOS</a>
+          <a href="prices.html" class="nav__item">PRECIOS</a>
+          <a href="contact.html" class="nav__item">CONTACTO</a>
+        </div>
+
+      </div>
+
+    </nav>
+
+
 
   </header>
   <!-- Termina el header-->
   <!-- Inicia el main-->
-  <main>
-    <div class="container d-grid gap-3">
+  <main class="services container ">
 
-      <div class="row text-center">
-        <h1 >Masajes</h1>
-      </div>
 
-      <div class="row justify-content-between">
-        <div class="col-4">
-          <h2>Masaje descontracturante</h2>
-          <p>
-            El masaje descontracturante se encarga de...
+
+
+    <h1 class="services__titule text-center">Servicios</h1>
+
+
+    <div class="services__masage row justify-content-between">
+
+      <div class="col-sm-12 col-md-5 col-lg-5">
+
+        <section class="service__masage--transition box-shadow-effect">
+          <div class="services__masage__titule">
+            <h3 class="services__masage__titule__text text-center">Masaje descontracturante</h3>
+          </div>
+
+
+          <p class="services__masage__description ">
+            El masaje descontracturante se encarga de
+            relajar la musculatura y disolver las contracturas que se producen por el estrés, las malas
+            posturas, la falta de descanso o una vida demasiado sedentaria.
+            <br>
+            Es un masaje algo más fuerte que uno de tipo sólo relajante, aunque no tiene porqué resultar más doloroso de
+            lo imprescindible, sólo lo natural mientras se trabaja la zona que está tensa.
           </p>
           <br>
-          <p>
+          <p class="services__masage__benefits">
             Beneficios:
+            <br>
+            Relaja y ayuda a dormir profundamente.
+            <br>
+            Activa la circulación sanguínea y te ayuda a eliminar toxinas en tu cuerpo.
+            <br>
+            Alivia dolores de cabeza e incluso migrañas producidas por contracturas cervicales.
           </p>
-        </div>
-        
-        <div class="col-6 text-center">
-          <img class="img-fluid" src="../images/Masaje-desconstracturante.jpg" alt="masaje descontracturante." />
-        </div>
+        </section>
       </div>
 
-      <div class="row justify-content-between">
-        <div class="col-4">
-          <h2>Masaje relajante</h2>
-          <p>
-            El masaje relajante se encarga de...
-          </p>
+
+
+      <div class="col-sm-8 col-md-6 col-lg-6">
+        <img class="services__masage__img img-fluid align-content-center rounded-circle"
+          src="../images/Masaje-Desconstracturante.jpg" alt="masaje descontracturante." />
+      </div>
+
+
+
+    </div>
+
+    <div class="services__masage row justify-content-between">
+      <div class="col-5">
+        <h3 class="services__masage__titule text-center">Masaje relajante</h3>
+        <p class="services__masage__description">
+          El masaje relajante se encarga de la realización de maniobras
+          superficiales en las que la intensidad de la presión es suave y el ritmo lento
+          y reiterativo, de manera que al recibir un contacto repetido y constante, se
+          pierde la sensación de dolor y los músculos se relajan.
           <br>
-          <p>
-            Beneficios:
-          </p>
-        </div>
-        
-        <div class="col-6">
-          <img class="img-fluid" src="../images/Masaje-relajante.jpg" alt="masaje relajante." />
-        </div>
+          Está indicado en personas con tensión, ansiedad, agotamiento lo que les
+          produce agarrotamiento muscular y endurecimiento de las fibras.
+        </p>
+        <br>
+        <p class="services__masage__benefits">
+          Beneficios:
+          <br>
+          Reducción del estrés y aumento de la relajación.
+          <br>
+          Reducción del dolor y de la inflamación y tensión de los músculos.
+          <br>
+          Mejora de la circulación, de la energía y del estado de alerta.
+          <br>
+          Disminución de la frecuencia cardíaca y la presión arterial.
+          <br>
+          Mejora de la función inmunológica.
+        </p>
+      </div>
+
+      <div class="col-6">
+        <img class="services__masage__img img-fluid rounded-circle" src="../images/Masaje-Relajante.png"
+          alt="masaje relajante." />
       </div>
     </div>
+
+    <div class="services__masage row justify-content-between">
+      <div class="col-5">
+        <h3 class="services__masage__titule text-center">Masaje ayurvedico</h3>
+        <p class="services__masage__description">
+          El masaje ayurvedico se encarga de...
+        </p>
+        <br>
+        <p class="services__masage__benefits">
+          Beneficios:
+          <br>
+          Refuerzo del desarrollo espiritual y una mayor armonización íntegra del paciente.
+          <br>
+          Mejora del sistema inmune, la postura corporal y la estructura ósea.
+          <br>
+          Aumento de la flexibilidad de los músculos.
+          <br>
+          Mayor capacidad para eliminar las toxinas, debido a que el masaje ayurvédico trabaja con el sistema
+          linfático y con el sanguíneo.
+          <br>
+          Relajación profunda del sistema nervioso, que produce una relajación generalizada.
+          <br>
+          Ayuda a combatir el estrés y la ansiedad.
+        </p>
+      </div>
+
+      <div class="col-6">
+        <img class="services__masage__img img-fluid rounded-circle" src="../images/Masaje-Ayurvedico.png"
+          alt="masaje ayuverdico." />
+      </div>
+    </div>
+
+    <div class="services__masage row justify-content-between">
+      <div class="col-5">
+        <h3 class="services__masage__titule text-center">Masaje con piedras calientes</h3>
+        <p class="services__masage__description">
+          El masaje con piedras calientes está enfocado en la aplicación de piedras en el cuerpo. Estas son calentadas
+          previamente y colocadas sobre la piel con el objetivo de aliviar tensión en los músculos para la reparación
+          de tejidos blandos dañados o incluso para mejorar las energías.
+        </p>
+        <br>
+        <p class="services__masage__benefits">
+          Beneficios:
+          <br>
+          Mejora las funciones de nuestro organismo, reduce los dolores crónicos especialmente los óseos y musculares.
+          <br>
+          Elimina las toxinas del cuerpo.
+          <br>
+          Ayuda a equilibrar el sistema nervioso y mejora la circulación sanguínea.
+          <br>
+          Nos ayuda a relajarnos.
+        </p>
+      </div>
+
+      <div class="col-6">
+        <img class="services__masage__img img-fluid rounded-circle" src="../images/Masaje-Piedras.png"
+          alt="masaje de piedras." />
+      </div>
+    </div>
+
+    <div class="services__masage row justify-content-between">
+      <div class="col-5">
+        <h3 class="services__masage__titule text-center">Masaje reductor</h3>
+        <p class="services__masage__description">
+          Este es un masaje que se realiza con una presión fuerte y una velocidad más
+          rápida a la usual.
+          <br>
+          El masaje reductivo tiene como principal objetivo ayudar a eliminar el acumulo de grasa localizada y a la
+          vez estilizar el contorno de la figura logrando una silueta más estética.
+          <br>
+        </p>
+        <br>
+        <p class="services__masage__benefits">
+          Beneficios:
+          <br>
+          Se pueden realizar en cualquier parte del cuerpo: cintura, caderas, piernas, abdomen, debajo de la barbilla.
+          <br>
+          Remueve y elimina la grasa de los tejidos.
+          <br>
+          Remueve la celulitis.
+          <br>
+          Beneficia la circulación sanguínea y linfática.
+          <br>
+        </p>
+      </div>
+
+      <div class="col-6 ">
+        <img class="services__masage__img img-fluid rounded-circle" src="../images/Masaje-Reductor.jpg"
+          alt="masaje reductor." />
+      </div>
+    </div>
+
+
+
   </main>
-  
+
   <!-- Inicia el footer-->
-  <footer class="footer flex-row">
-    <p class="footer__copyright">Copyright 2022</p>
-    <picture class="footer__imagen">
-      <img class="footer__whatsapp" src="./assets/images/icono-whatsapp.png" alt="" />
-    </picture>
+  <footer class="footer">
+    <p class="footer__copyright">Copyright &copy; 2022</p>
+    <a
+      class="footer__link"
+      href="https://api.whatsapp.com/send?phone=2966644957&text=Hola, En que te puedo ayudar!"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        class="footer__img"
+        src="../images/Masaje_Whatsapp.svg"
+        widht="50"
+        height="50"
+      />
+    </a>
   </footer>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
   <!-- Fin footer-->

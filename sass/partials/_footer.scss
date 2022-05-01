@@ -1,6 +1,7 @@
 footer {
   display: flex;
   background-color: $secondary-color;
+  /*Solo se vera un 10 porciento disponible de la pantalla*/
   min-height: 10vh;
   padding: 0px 20px;
   align-items: center;

@@ -16,11 +16,11 @@ html {
   font-size: 62.5%;
   /*Para calcular a 10px*/
   font-family: var(--font-primary);
-  background-color: var(#c1e2fa); }
+  background-color: var(#fffaaa); }
 
 body {
   min-height: 100vh;
-  background-color: var(#c1e2fa); }
+  background-color: var(#fffaaa); }
 
 ul {
   list-style-type: none; }
@@ -90,14 +90,14 @@ main {
 
 /* PARTIALS */
 header {
-  background-color: #c1e2fa; }
+  background-color: #fffaaa; }
   header .navbar {
     min-height: 10vh;
     /*10% del alto visible de la pantalla*/
     justify-content: space-between;
     align-items: center;
     padding-left: 2rem;
-    background-color: #c1e2fa; }
+    background-color: #fffaaa; }
     header .navbar .navbar__logo__img {
       width: 30;
       height: 24; }
@@ -112,7 +112,8 @@ header {
 
 footer {
   display: flex;
-  background-color: #c1e2fa;
+  background-color: #fffaaa;
+  /*Solo se vera un 10 porciento disponible de la pantalla*/
   min-height: 10vh;
   padding: 0px 20px;
   align-items: center;

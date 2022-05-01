@@ -43,3 +43,21 @@ header {
   }
 
 }
+
+
+.navbar {
+  &__item {}
+
+  &__link {
+      &--active {
+          
+      }
+  }
+
+  &__logo {}
+
+  &__nav {}
+
+  &__toogler {}
+}
+
