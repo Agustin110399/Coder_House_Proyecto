@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Este es el sitio web de masajes del norte donde encontraras los servicios disponibles, metodos, información y mas">
-  <meta name="keywords"  content="MASAJE, AYURVEDICO, RELAJANTE, DESCONTRACTURANTE, SERVICIOS, RIO GALLEGOS, SANTA CRUZ">
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-  <title>Masajes del norte</title>
-  <link class="rounded-3" rel="icon" type="image/png" href="./assets/images/Masaje_Logo.jpg"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description"
+  content="Este es el sitio web de masajes del norte donde encontraras los servicios disponibles, metodos, información y mas">
+<meta name="keywords" content="MASAJE, AYURVEDICO, RELAJANTE, DESCONTRACTURANTE, SERVICIOS, RIO GALLEGOS, SANTA CRUZ">
+<!-- CSS only -->
 
+<link rel="stylesheet" href="./assets/css/main.css" />
+<title>Masajes del norte</title>
+<link rel="icon" type="image/png" href="./assets/images/Masaje_Logo.jpg" />
 </head>
 
 <!--Inicia el cuerpo-->
@@ -22,12 +20,13 @@
   <header>
     <!--Inicia Nav-->
 
-    
+
     <nav class="nav">
       <div class="nav__container">
         <a class="nav__logo" href="index.html">
           <img class="nav__logoimg" src="./assets/images/Masaje_Logo.jpg" alt="" width="60" height="40" />
           <h1 class="nav__logotext">Masajes del norte</h1>
+          <h1 class="nav__logoalternative">MN</h1>
         </a>
 
         <label for="menu" class="nav__label">
@@ -37,7 +36,7 @@
         <input type="checkbox" id="menu" class="nav__input" />
 
         <div class="nav__menu">
-          <a href="index.html" class="nav__item">INICIO</a>
+          <a href="index.html" class="nav__item--active">INICIO</a>
           <a href="assets/pages/about.html" class="nav__item">SOBRE MI</a>
           <a href="assets/pages/service.html" class="nav__item">SERVICIOS</a>
           <a href="assets/pages/prices.html" class="nav__item">PRECIOS</a>
@@ -46,7 +45,7 @@
       </div>
     </nav>
 
-<section>
+    <section>
 
 
 
@@ -54,31 +53,27 @@
   <!-- Termina el header-->
 
   <!-- Inicia el main-->
-  <main class="home container d-grid align-items-center">
-    <div class="home__welcome">
+  <main class="home">
+    <div class="home__container">
 
 
+      <h3 class="home__title">
+        Bienvenido a masajes del norte
+      </h3>
+      <p class="home__text">
+        Si nunca te haz hecho un masaje o
+        quieres saber cómo trabajo esta es tu oportunidad. Aprovecha y
+        obtén un masaje descontracturante o relajante por un precio
+        increíble. Y asegurate de revisar nuestros otros servicios.
+      </p>
 
-      <div class="row justify-content-center align-items-center">
-        <div class="col-sm-12 col-md-6">
-          <picture class="home__welcome__image">
-            <img class="home__welcome__image bienvenida__img img-fluid rounded-circle"
-              src="./assets/images/Masaje-Bienvenida 1.jpg" alt="" />
-          </picture>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <h1 class="home__welcome__title text-center">
-            Bienvenido a masajes del norte
-          </h1>
-          <p class="home__welcome__text">
-            Si nunca te haz hecho un masaje o
-            quieres saber cómo trabajo esta es tu oportunidad. Aprovecha y
-            obtén un masaje descontracturante o relajante por un precio
-            increíble. Y asegurate de revisar nuestros otros servicios.
-          </p>
-        </div>
-      </div>
+      <picture class="home__img">
+        <img class="home__image img-fluid" src="./assets/images/Masaje-Bienvenida 1.jpg" alt="" />
+      </picture>
+
+
     </div>
+
   </main>
 
   <!-- Inicia el footer-->
@@ -90,10 +85,6 @@
     </a>
   </footer>
   <!-- Fin footer-->
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
 </body>
 <!--termina el cuerpo-->
 

@@ -1,25 +1,17 @@
 footer {
   display: flex;
-  background-color: $secondary-color;
-  /*Solo se vera un 10 porciento disponible de la pantalla*/
-  min-height: 10vh;
-  padding: 0px 20px;
   align-items: center;
-  justify-content: center;
-  bottom: 0;
+  justify-content: space-around;
+  bottom: 0 !important;
+  width: 100%;
+  background-color: $parcials-color;
+  min-height: 10vh;
 
-  .footer__copyright__text {
-    color: $color-black;
-    font-size: $text-md;
+  &__copyright {
+    color: #fff;
   }
 
-
-
-  .footer__whatsapp {
-    height: 5.5rem;
-
+  &__text {
+    color: #fff;
   }
-
-
-
 }

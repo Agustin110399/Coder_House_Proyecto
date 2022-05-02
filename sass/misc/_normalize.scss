@@ -16,52 +16,38 @@
 html {
   font-size: 62.5%;
   /*Para calcular a 10px*/
-  font-family: var(--font-primary);
-  background-color: var($secondary-color);
+  width: 100%;
 }
 
+
+main{
+  background: $body-color;
+  min-height: 80vh;
+}
 
 body {
-  min-height: 100vh;
-  background-color: var($secondary-color);
+  min-height: 80vh; 
 }
 
-ul {
-  list-style-type: none;
+
+p{
+ font-family: $font-paragraph; 
+ font-size: $text-md;
 }
 
-a {
+h1,h2,h3{
+  font-family: $font-titule;
+  font-style: italic;
+  font-size: $text-lg;
+  
+}
+
+a{
   text-decoration: none;
-}
-
-p {
-  color: $color-white;
-  font-size: $text-md;
-  font-family: $font-paragraph;
-}
-
-h1 {
-  font-size: $text-xl;
-  font-family: $font-titule;
-  color: $color-black
-}
-
-
-h2,
-h3 {
-  font-size: $text-md;
-  font-family: $font-titule;
+  text-decoration-color: none;
+  text-decoration-line: none;
+  color: $link-color;
+  font-family: $font-link;
+  font-size: $text-sm;
   
-}
-
-label {
-  font-size: $text-md;
-  font-family: $font-paragraph;
-  
-}
-
-main {
-  min-height: 80vh;
-  align-items: center;  
-  background-color: $principal-color;
 }

@@ -1,63 +1,127 @@
-header {
+.nav {
+  display: flex;
+  align-content: center;
+  background: $parcials-color;
+  width: 100%;
+  color: $color-white;
+  min-height: 10vh;
 
-  background-color: $secondary-color;
-
-  .navbar {
-
-    min-height: 10vh;
-    /*10% del alto visible de la pantalla*/
+  &__container {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2rem;
-    background-color: $secondary-color;
+  }
 
-    .navbar__logo {
+  &__logo {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+  }
 
-      &__img {
-        width: 30;
-        height: 24;
-      }
+  &__menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: .5em;
+  }
+
+  &__item {
+    color: #fff;
+    text-decoration: none;
+    --clipy: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+    padding: .5em 1.5em;
+    font-family: $font-link;
+    font-size: $text-sm;
+
+
+    &::after {
+      content: "";
+      display: block;
+      background: $link-color;
+      width: 100%;
+      margin-top: 3px;
+      height: 3px;
+      clip-path: var(--clipy);
+      transition: clip-path 0.5s;
+      -webkit-transition: clip-path 0.5s;
+      -moz-transition: clip-path 0.5s;
+      -ms-transition: clip-path 0.5s;
+      -o-transition: clip-path 0.5s;
     }
 
-    .navbar__nav {
+    &:hover {
+      --clipy: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
 
-      .navbar__item {
+    &:hover {
+      color: $link-color;
+    }
 
-
-        padding-left: 2em;
-
-        .navbar__link {
-          font-size: $text-md;
-          font-family: $font-link;
-          
-        }
-
-        .navbar__link:hover {
-          background-color: blue;
-          transition: 2s;
-        }
-
-      }
-
+    &--active {
+      color: $parcials-color;
+      background: $link-color;
+      padding: .5em 1.5em;
+      border-radius: 15em;
+      text-align: center;
+      font-family: $font-link;
+      font-size: $text-sm;
     }
   }
 
-}
-
-
-.navbar {
-  &__item {}
-
-  &__link {
-      &--active {
-          
-      }
+  &__label,
+  &__input,
+  &__logoalternative {
+    display: none;
   }
 
-  &__logo {}
+  @media screen and (max-width: 1135px) {
+    .nav__logotext {
+      display: none;
+    }
 
-  &__nav {}
+    .nav__logoalternative {
+      display: contents;
+    }
+  }
 
-  &__toogler {}
+  @media screen and (max-width: 800px) {
+
+    .nav__label {
+      display: block;
+      cursor: pointer;
+    }
+
+
+    .nav__logotext {
+      display: none;
+    }
+
+    .nav__menu {
+      padding-top: 10em;
+      position: fixed;
+      top: 69px;
+      bottom: 0;
+      background: $body-color;
+      width: 100%;
+      left: 0;
+      display: flex;
+      gap: 5.5em;
+      flex-direction: column;
+      align-items: center;
+      clip-path: circle(0 at center);
+      transition: clip-path 1s ease;
+      -webkit-transition: clip-path 1s ease;
+      -moz-transition: clip-path 1s ease;
+      -ms-transition: clip-path 1s ease;
+      -o-transition: clip-path 1s ease;
+    }
+
+    .nav__input:checked+.nav__menu {
+
+      clip-path: circle(100% at center);
+    }
+
+  }
+
 }
-

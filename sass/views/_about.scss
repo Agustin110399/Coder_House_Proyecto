@@ -1,0 +1,32 @@
+.about {
+
+
+    & .about__container {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        padding-top: 5em;
+        padding-bottom: 3em;
+        margin-right: auto;
+        margin-left: auto;
+        gap: 2rem;
+
+    }
+
+    &__titule{
+        text-align: center;
+    }
+
+    &__text{
+        padding-left: 1em;
+    }
+
+    &__link{
+        font-size: $text-md;
+        color:$link-color;
+    }
+
+
+
+}

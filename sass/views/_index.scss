@@ -1,23 +1,75 @@
-.main {
+.home {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+
+    &__container {
+        width: 90%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto 1fr;
+        
+        padding-top: 3vh;
+        margin-right: auto;
+        margin-left: auto;
+        gap: 2rem;
+
+        
+    }
+
     
 
-    &__welcome {
-
-        animation: fadeInAnimation linear 2s;
-
         &__title {
+            text-align: center;
+        }
+
+        &__text {
+            vertical-align: text-top;
+            text-align: center;
+        }
+
+        &__img {
+            max-height: 60vh;
+            width: 100%;
+            min-width: 320px;
+            grid-column: 1;
+            grid-row: 1 / 3;
             
-            
-            &:hover{
-                
-                text-decoration: underline crimson;               
+        }
+
+        &__image {
+            max-height: 60vh;
+            margin-right: auto;
+            margin-left: auto;
+            align-self: center;
+            border-radius: 15em;
+            padding: 2.5em;
+        }
+
+
+
+    @media screen and (max-width: 768px) {
+
+        .home {
+
+            &__container {
+                display: flex;
+                gap: 3.5em;
+                flex-direction: column;
+                align-items: center;    
+                padding-bottom: 3.5em;         
             }
 
 
+            &__text {
+                order: 3;
+            }
+
         }
 
-        &__text{
-            text-decoration: underline cadetblue;
-        }
+
     }
+
+
 }

@@ -1,0 +1,79 @@
+.contact {
+
+    min-height: 80vh;
+
+    width: 100%;
+    color: #f3f3f3;
+
+    &__container {
+        width: 60%;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        margin-right: auto;
+        margin-left: auto;        
+        font-weight: bold;
+        
+
+        .form {
+
+            &__titule{                
+                text-align: center;
+                font-size: $text-md;                
+            }
+
+            label {
+                font-family: $font-paragraph;
+                font-size: $text-sm;
+                margin-left: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            &__input {
+                margin-right: 1rem;
+                margin-left: 0;
+                margin-bottom: 2rem;
+                padding: 0.5rem;
+                width: 100%;
+                border: none;
+            }
+
+            button {
+                padding: 1.5rem;
+                border-radius: 15px;
+                border: none;
+                color: $link-color;
+                font-family: $font-titule;
+                font-weight: bold;
+                background: $parcials-color;
+            }
+
+        }
+    }
+
+
+
+    .contact .contact__container .label {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .contact .contact__container input {
+        margin-right: 1rem;
+        margin-left: 0;
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+        width: 100%;
+        border: none;
+    }
+
+    .contact .contact__container button {
+        padding: 1.5rem;
+        border-radius: 15px;
+        border: none;
+        color: blueviolet;
+        font-family: "custom-font";
+        font-weight: bold;
+        background: #f3f3f3;
+    }
+
+}

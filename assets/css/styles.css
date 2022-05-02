@@ -139,7 +139,7 @@ ul {
 
 /*Footer*/
 
-footer {
+.footer {
   display: flex;
   background-color: var(--secondary-color);
   align-items: center;
@@ -154,9 +154,7 @@ footer {
   color: #fff;
 }
 
-.footer__img {
-  color: #fff;
-}
+
 
 .footer__text {
   color: #fff;
@@ -186,20 +184,6 @@ img {
   max-width: 100%;
 }
 
-.nabbar__toogler__booton__icon__img {
-  width: "50px";
-  height: "50px";
-}
-
-.navbar__toogler__botton__icon {
-  height: 50px;
-  width: 50px;
-}
-
-.navbar__logo__img {
-  width: 45px;
-  height: 45px;
-}
 
 /* Animaciones */
 
