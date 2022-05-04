@@ -5,8 +5,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/main.css" />
-  <title>Document</title>
+  <meta name="description"
+    content="Este es el sitio web de masajes del norte donde encontraras los servicios disponibles, metodos, información y mas
+    Esta seccion, precios, se encarga de mostrarle al usuario los precios de los diferentes servicios ofrecidos
+    mediante unas 'card' ilustrativas." />
+  <meta name="keywords"
+    content="MASAJE, MASAJES, AYURVEDICO, RELAJANTE, DESCONTRACTURANTE,PIEDRAS CALIENTES, SERVICIOS, COMPRAR, RIO GALLEGOS, SANTA CRUZ" />
+  <!-- CSS only -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <title>Masajes del norte</title>
+  <link rel="icon" type="image/png" href="../images/Masaje_Logo.png" />
 </head>
 
 <!--Inicia el cuerpo-->
@@ -15,17 +23,11 @@
   <!-- Inicia el header-->
   <header>
     <nav class="nav">
-      
+
       <div class="nav__container">
 
         <a class="nav__logo" href="../../index.html">
-          <img
-            class="nav__logoimg"
-            src="../images/Masaje_Logo.jpg"
-            alt=""
-            width="60"
-            height="40"
-          />
+          <img class="nav__logoimg" src="../images/Masaje_Logo.png" alt="" width="60" height="40" />
           <h1 class="nav__logotext">Masajes del norte</h1>
           <h1 class="nav__logoalternative">MN</h1>
         </a>
@@ -48,93 +50,100 @@
 
     </nav>
 
-     
+
   </header>
   <!-- Termina el header-->
   <!-- Inicia el main-->
   <main>
 
-    <div class="prices">
+    <h2 class="prices__titule">Precios</h2>
 
-      <h2 class="prices__titule text-center">Precios</h2>
-
-
-      <div class="container row align-items-center justify-content-evenly gap-5">
-
-
-
-        <div class="card col-4">
-          <img src="../images/Masaje-Desconstracturante.jpg" alt="masaje descontracturante.">
-          <div class="card-body">
-            <h5 class="card-title">Masaje desconstracturante</h5>
-            <p class="card-price">$1000</p>
-            <a href="contact.html" class="btn btn-primary">Comprar</a>
+    <div class="prices">    
+      
+      <div class="prices__container">
+        <div class="prices__card">
+          <picture class="prices__image">
+            <img class="prices__img img-fluid" src="../images/Masaje-Desconstracturante.png" alt="masaje descontracturante.">
+          </picture>
+          <div class="card__body">
+            <h5 class="card__titule">Masaje desconstracturante</h5>
+            <p class="card__price">$2000</p>
+            <a href="contact.html" class="card__btn btn--style">Comprar</a>
+          </div>
+        </div>
+  
+        <div class="prices__card">
+          <picture class="prices__image">
+            <img class="prices__img img-fluid" src="../images/Masaje-Relajante.png" alt="masaje relajante.">
+          </picture>
+          <div class="card__body">
+            <h5 class="card__titule">Masaje <br> relajante</h5>
+            <p class="card__price">$1500</p>
+            <a href="contact.html" class="card__btn btn--style">Comprar</a>
+          </div>
+        </div>
+  
+        <div class="prices__card">
+          <picture class="prices__image">
+            <img class="prices__img img-fluid" src="../images/Masaje-Ayurvedico.png" alt="masaje ayuverda.">
+          </picture>
+          <div class="card__body">
+            <h5 class="card__titule">Masaje <br> ayurvedico</h5>
+            <p class="card__price">$7500</p>
+            <a href="contact.html" class="card__btn btn--style">Comprar</a>
           </div>
         </div>
 
-        <div class="card col-4">
-          <img src="../images/Masaje-Relajante.png" alt="masaje relajante.">
-          <div class="card-body">
-            <h5 class="card-title">Masaje relajante</h5>
-            <p class="card-price">$1200</p>
-            <a href="contact.html" class="btn btn-primary">Comprar</a>
+      
+
+      
+
+      
+        <div class="prices__card">
+          <picture class="prices__image">
+            <img class="prices__img img-fluid" src="../images/Masaje-Piedras.png" alt="masaje con piedras calientes.">
+          </picture>
+          <div class="card__body">
+            <h5 class="card__titule">Masaje con piedras calientes</h5>
+            <p class="card__price">$1800</p>
+            <a href="contact.html" class="card__btn btn--style">Comprar</a>
           </div>
         </div>
-
-        <div class="card col-4">
-          <img src="../images/Masaje-Ayurvedico.png" alt="masaje relajante.">
-          <div class="card-body">
-            <h5 class="card-title">Masaje ayurvedico</h5>
-            <p class="card-price">$1200</p>
-            <a href="contact.html" class="btn btn-primary">Comprar</a>
+  
+        <div class="prices__card">
+          <picture class="prices__image">
+            <img class="prices__img img-fluid" src="../images/Masaje-Reductor.png" alt="masaje con piedras calientes.">
+          </picture>
+          <div class="card__body">
+            <h5 class="card__titule">Masaje <br> reductor</h5>
+            <p class="card__price">$1600</p>
+            <a href="contact.html" class="card__btn btn--style">Comprar</a>
           </div>
         </div>
-
-        <div class="card col-4">
-          <img src="../images/Masaje-Piedras.png" alt="masaje relajante.">
-          <div class="card-body">
-            <h5 class="card-title">Masaje con piedras</h5>
-            <p class="card-price">$1200</p>
-            <a href="contact.html" class="btn btn-primary">Comprar</a>
+  
+  
+        <div class="prices__card">
+          <picture class="prices__image">
+            <img class="prices__img img-fluid" src="../images/Masaje-Reflexologia.png" alt="masaje con piedras calientes.">
+          </picture>
+          <div class="card__body">
+            <h5 class="card__titule"> Terapia <br> de reflexologia</h5>
+            <p class="card__price">$2000</p>
+            <a href="contact.html" class="card__btn btn--style">Comprar</a>
           </div>
         </div>
-
-        <div class="card col-4">
-          <img class="card__img" src="../images/Masaje-Reductor.jpg" alt="masaje relajante.">
-          <div class="card-body">
-            <h5 class="card-title">Masaje reductor</h5>
-            <p class="card-price">$1200</p>
-            <a href="contact.html" class="btn btn-primary">Comprar</a>
-          </div>
-        </div>
-
-        <div class="card col-4">
-          <img src="../images/Masaje-Reflexologia.png" alt="masaje relajante.">
-          <div class="card-body">
-            <h5 class="card-title">Reflexologia</h5>
-            <p class="card-price">$1200</p>
-            <a href="contact.html" class="btn btn-lg">Comprar</a>
-          </div>
-        </div>
-
+  
       </div>
+
+      
     </div>
   </main>
   <!-- Inicia el footer-->
   <footer class="footer">
     <p class="footer__copyright">Copyright &copy; 2022</p>
-    <a
-      class="footer__link"
-      href="https://api.whatsapp.com/send?phone=2966644957&text=Hola, En que te puedo ayudar!"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img
-        class="footer__img"
-        src="../images/Masaje_Whatsapp.svg"
-        widht="50"
-        height="50"
-      />
+    <a class="footer__link" href="https://api.whatsapp.com/send?phone=54 9 2966 64-4957&text=Hola, En que te puedo ayudar!"
+      target="_blank" rel="noopener noreferrer">
+      <img class="footer__img" src="../images/Masaje_Whatsapp.svg" widht="50" height="50" />
     </a>
   </footer>
   <!-- JavaScript Bundle with Popper -->

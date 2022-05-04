@@ -10,44 +10,53 @@
   list-style: none;
 }
 
-
 /* Globals*/
 
 html {
   font-size: 62.5%;
   /*Para calcular a 10px*/
   width: 100%;
+  background: $principal-color;
 }
 
-
-main{
-  background: $body-color;
+main {
+  background: $principal-color;
   min-height: 80vh;
 }
 
 body {
-  min-height: 80vh; 
+  min-height: 80vh;
 }
 
-
-p{
- font-family: $font-paragraph; 
- font-size: $text-md;
+p {
+  font-family: $font-paragraph;
+  font-size: $text-md;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
   font-family: $font-titule;
   font-style: italic;
   font-size: $text-lg;
-  
 }
 
-a{
+a {
   text-decoration: none;
   text-decoration-color: none;
   text-decoration-line: none;
-  color: $link-color;
+  color: $personal-color;
   font-family: $font-link;
   font-size: $text-sm;
-  
+}
+
+img {
+  &:hover {
+    animation: shake2 linear 1000ms infinite;
+  }
+}
+label{
+  .nav__img{
+    animation: none;
+  }
 }

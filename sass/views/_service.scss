@@ -1,0 +1,48 @@
+.services {
+  &__principaltitule {
+    padding-top: 1em;
+    text-align: center;    
+  }
+
+  &__masage {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+  }
+
+  &__titule {
+    text-align: center;
+  }
+
+  &__container {
+    width: 100%;
+    display: grid;
+    padding: 5em;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+  }
+
+  &__description {
+    padding-left: 0.3em;
+  }
+
+  &__benefits {
+    padding-left: 0.3em;
+  }
+
+  &__img {
+    padding: 3em;
+    border-radius: 10em;
+    max-height: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .services {
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

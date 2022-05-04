@@ -20,25 +20,36 @@
     align-items: center;
   }
 
+  &__logoimg {
+    &:hover {
+      animation: shake linear 1000ms infinite;
+    }
+  }
+
+  &__logotext {
+    &:hover {
+      animation: move linear 2000ms infinite;
+    }
+  }
+
   &__menu {
     display: grid;
     grid-auto-flow: column;
-    gap: .5em;
+    gap: 0.5em;
   }
 
   &__item {
-    color: #fff;
+    color: $color-white;
     text-decoration: none;
     --clipy: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
-    padding: .5em 1.5em;
+    padding: 0.5em 1.5em;
     font-family: $font-link;
     font-size: $text-sm;
-
 
     &::after {
       content: "";
       display: block;
-      background: $link-color;
+      background: $personal-color;
       width: 100%;
       margin-top: 3px;
       height: 3px;
@@ -55,13 +66,13 @@
     }
 
     &:hover {
-      color: $link-color;
+      color: $personal-color;
     }
 
     &--active {
       color: $parcials-color;
-      background: $link-color;
-      padding: .5em 1.5em;
+      background: $personal-color;
+      padding: 0.5em 1.5em;
       border-radius: 15em;
       text-align: center;
       font-family: $font-link;
@@ -86,12 +97,10 @@
   }
 
   @media screen and (max-width: 800px) {
-
     .nav__label {
       display: block;
       cursor: pointer;
     }
-
 
     .nav__logotext {
       display: none;
@@ -99,10 +108,10 @@
 
     .nav__menu {
       padding-top: 10em;
-      position: fixed;
-      top: 69px;
+      position: absolute;
+      top: auto;
       bottom: 0;
-      background: $body-color;
+      background: $principal-color;
       width: 100%;
       left: 0;
       display: flex;
@@ -117,11 +126,8 @@
       -o-transition: clip-path 1s ease;
     }
 
-    .nav__input:checked+.nav__menu {
-
+    .nav__input:checked + .nav__menu {
       clip-path: circle(100% at center);
     }
-
   }
-
 }

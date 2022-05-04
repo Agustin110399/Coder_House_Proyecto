@@ -1,82 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Este es el sitio web de masajes del norte donde encontraras los servicios disponibles, metodos, información y mas
+    Esta seccion, contacto, tiene un formulurio el cual el usuario podra llenar para enviar una consulta.
+    Esta misma puede estar relacionada a los precios ofertas, un turno, etc."
+    />
+    <meta
+      name="keywords"
+      content="MASAJE, CONTACTO, AYURVEDICO, RELAJANTE, DESCONTRACTURANTE,PIEDRAS CALIENTES, SERVICIOS, COMPRAR, RIO GALLEGOS, SANTA CRUZ"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- CSS only -->
-  <link rel="stylesheet" href="../css/main.css" />
-  <title>Document</title>
-</head>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Masajes del norte</title>
+    <link rel="icon" type="image/png" href="../images/Masaje_Logo.png" />
+  </head>
 
-<!--Inicia el cuerpo-->
+  <!--Inicia el cuerpo-->
 
-<body>
-  <!-- Inicia el header-->
-  <header>
-    <nav class="nav">
-      <div class="nav__container">
+  <body>
+    <!-- Inicia el header-->
+    <header>
+      <nav class="nav">
+        <div class="nav__container">
+          <a class="nav__logo" href="../../index.html">
+            <img
+              class="nav__logoimg"
+              src="../images/Masaje_Logo.png"
+              alt=""
+              width="60"
+              height="40"
+            />
+            <h1 class="nav__logotext">Masajes del norte</h1>
+            <h1 class="nav__logoalternative">MN</h1>
+          </a>
 
-        <a class="nav__logo" href="../../index.html">
-          <img class="nav__logoimg" src="../images/Masaje_Logo.jpg" alt="" width="60" height="40" />
-          <h1 class="nav__logotext">Masajes del norte</h1>
-          <h1 class="nav__logoalternative">MN</h1>
-        </a>
+          <label for="menu" class="nav__label">
+            <img src="../images/Masajes-iconmenu.svg" class="nav__img" alt="" />
+          </label>
 
-        <label for="menu" class="nav__label">
-          <img src="../images/Masajes-iconmenu.svg" class="nav__img" alt="" />
-        </label>
+          <input type="checkbox" id="menu" class="nav__input" />
 
-        <input type="checkbox" id="menu" class="nav__input" />
-
-        <div class="nav__menu">
-          <a href="../../index.html" class="nav__item">INICIO</a>
-          <a href="about.html" class="nav__item">SOBRE MI</a>
-          <a href="service.html" class="nav__item">SERVICIOS</a>
-          <a href="prices.html" class="nav__item">PRECIOS</a>
-          <a href="contact.html" class="nav__item--active">CONTACTO</a>
+          <div class="nav__menu">
+            <a href="../../index.html" class="nav__item">INICIO</a>
+            <a href="about.html" class="nav__item">SOBRE MI</a>
+            <a href="service.html" class="nav__item">SERVICIOS</a>
+            <a href="prices.html" class="nav__item">PRECIOS</a>
+            <a href="contact.html" class="nav__item--active">CONTACTO</a>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <!-- Termina el header-->
-  <!-- Inicia el main-->
-  <main>
-    <section class="contact">
-      <div class="contact__container">
-        <form class="form" action="" method="post" enctype="">
-          <h3 class="form__titule" for="name">Contacto :</h3><br>
-          <label class="form__name">Nombre :</label>
-          <input class="form__input" type="text" name="Nombre" id="">
-          <br>
-          <label class="form__mensage" for="consulta">Consulta :</label>
-          <input class="form__input" type="text" name="consulta" id="" height="35%">
-          <br>
-          <label class="form__cell" for="number">Telefono :</label>
-          <input class="form__input" type="number" name="number" id="">
-          <br>
-          <label class="form__mail" for="email">Email :</label>
-          <input class="form__input" type="email" name="email" id="">
-          <br>
-          <button class="form__button--send" type="submit">Enviar</button>
-          <button class="form__button--reset" type="reset">Vaciar</button>
-        </form>
-      </div>
-    </section>
-  </main>
+    <!-- Termina el header-->
+    <!-- Inicia el main-->
+    <main>
+      <section class="contact">
+        <div class="contact__container">
+          <form class="form" action="" method="post" enctype="">
+            <h3 class="form__titule" for="name">Contacto :</h3>
+            <br />
+            <label class="form__name">Nombre :</label>
+            <input class="form__input" type="text" name="Nombre" id="" />
+            <br />
+            <label class="form__option">Elija :</label>
+            <select class="form__input">
+              <option value="0">...</option>
+              <option>Consulta</option>
+              <option>Solicitar turno</option>
+              <option>A domicilio</option>
+            </select>
+            <br />
+            <label class="form__mensage" for="consulta">Consulta :</label>
+            <input
+              class="form__input"
+              type="text"
+              name="consulta"
+              id=""
+              height="35%"
+            />
+            <br />
+            <label class="form__cell" for="number">Telefono :</label>
+            <input class="form__input" type="number" name="number" id="" />
+            <br />
+            <label class="form__mail" for="email">Email :</label>
+            <input class="form__input" type="email" name="email" id="" />
+            <br />
+            <div class="button__container">
+              <button class="form__btn btn--style" type="submit">Enviar</button>
+              <button class="form__btn btn--style" type="reset">Vaciar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
 
-  <!-- Inicia el footer-->
-  <footer class="footer">
-    <p class="footer__copyright">Copyright &copy; 2022</p>
-    <a class="footer__link" href="https://api.whatsapp.com/send?phone=2966644957&text=Hola, En que te puedo ayudar!"
-      target="_blank" rel="noopener noreferrer">
-      <img class="footer__img" src="../images/Masaje_Whatsapp.svg" widht="50" height="50" />
-    </a>
-  </footer>
-  <!-- Fin footer-->
-</body>
-<!--termina el cuerpo-->
-
+    <!-- Inicia el footer-->
+    <footer class="footer">
+      <p class="footer__copyright">Copyright &copy; 2022</p>
+      <a
+        class="footer__link"
+        href="https://api.whatsapp.com/send?phone=54 9 2966 64-4957&text=Hola, En que te puedo ayudar!"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="footer__img"
+          src="../images/Masaje_Whatsapp.svg"
+          widht="50"
+          height="50"
+        />
+      </a>
+    </footer>
+    <!-- Fin footer-->
+  </body>
+  <!--termina el cuerpo-->
 </html>

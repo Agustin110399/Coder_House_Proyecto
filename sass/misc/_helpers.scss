@@ -1,22 +1,32 @@
-.img-fluid{
-    max-width: 100%;
-    height: auto;
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 .fade-in-image {
-    opacity: 50%;
+  opacity: 50%;
 }
 
 .fade-in-image:hover {
-    opacity: 100%;
-    transition: opacity 2s;
-
+  opacity: 100%;
+  transition: opacity 2s;
 }
 
 .image-scale {
-    filter: grayscale(100%);
-    transition: 2.5s;
+  filter: grayscale(100%);
+  transition: 2.5s;
 }
 
 .image-scale:hover {
-    filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.btn--style {
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: none;
+  color: $personal-color;
+  font-family: $font-titule;
+  font-weight: bold;
+  background: $parcials-color;
+  cursor: pointer;
 }
