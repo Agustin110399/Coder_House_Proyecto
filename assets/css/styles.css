@@ -204,7 +204,7 @@ label .nav__img {
     .nav .nav__menu {
       padding-top: 10em;
       position: absolute;
-      top: auto;
+      top: 91px;
       bottom: 0;
       background: #6190e8;
       width: 100%;
