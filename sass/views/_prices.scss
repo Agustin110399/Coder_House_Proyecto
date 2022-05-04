@@ -1,6 +1,5 @@
 .prices {
- 
-  &__titule{
+  &__titule {
     padding-top: 1em;
     text-align: center;
   }
@@ -20,12 +19,12 @@
     border-radius: 4rem;
     overflow: hidden;
     background: $parcials-color;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease;
 
     &:hover {
-      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      box-shadow: 25px 25px 20px rgba(0, 0, 0, 0.4);
       transform: translateY(-3%);
     }
 
@@ -33,39 +32,49 @@
       font-size: $text-md;
       font-family: $font-titule;
       text-align: center;
-      height:75px;
+      height: 75px;
     }
 
-    .card__btn{
+    .card__btn {
       text-align: center;
       background-color: $personal-color;
-      color: $parcials-color;      
+      color: $parcials-color;
     }
 
-    .card__body{
+    .card__body {
       padding: 3em;
-      height:270px;
-      display: flex;      
+      height: 270px;
+      display: flex;
       flex-direction: column;
       gap: 3em;
     }
+
+    &--color1 {
+      background: $other-color;
+    }
+
+    &--color2{
+      background-color: $alternative-color;
+    }
   }
 
-  &__img {
-    max-height: auto;
-  }
 
   @media screen and (max-width: 800px) {
     .prices {
-
       &__card {
-        width: 90%;      
+        width: 90%;
       }
 
       &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+      }
+    }
+    .card{
+      &__price{
+        font-size: $text-md;
       }
     }
   }

@@ -35,6 +35,9 @@
     padding: 3em;
     border-radius: 10em;
     max-height: 60%;
+    &:hover {
+      animation: shake2 linear 1000ms infinite;
+    }
   }
 }
 

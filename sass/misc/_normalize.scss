@@ -50,13 +50,19 @@ a {
   font-size: $text-sm;
 }
 
-img {
-  &:hover {
-    animation: shake2 linear 1000ms infinite;
-  }
-}
 label{
   .nav__img{
     animation: none;
   }
+}
+
+@media screen and (max-width: 800px) {
+  p{
+    font-size: $text-sm;
+  }
+
+  h1, h2, h3, h4, h5{
+    font-size: $text-md
+  }
+  
 }

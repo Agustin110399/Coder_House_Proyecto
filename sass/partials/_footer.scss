@@ -12,9 +12,23 @@
   }
 
   &__img{
+    height: 3.5em;
     color: $personal-color;
     &:hover{
       animation: shake linear 1000ms infinite;
     }
   }
+
+  @media screen and (max-width: 768px) {
+
+    &__copyright{
+      font-size: $text-sm;
+    }
+
+    &__img{
+      height: 2.5em;
+    }
+
+
+}
 }
